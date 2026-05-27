@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# IDE / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# Wan 官方权重（体积大，请本地或 Hugging Face 下载）
+Wan2.2-TI2V-5B/
+Wan2.2-T2V-A14B/
+Wan2.2-I2V-A14B/
+Wan2.2-S2V-14B/
+Wan2.2-Animate-14B/
+Wan2.2-*/
+checkpoints/
+weights/*.safetensors
+weights/*.pt
+weights/*.pth
+weights/*.bin
+weights/*.ckpt
+
+# 训练产出与动作头权重
+action_head_runs/**/*.pt
+action_head_runs/**/*.pth
+action_head_runs/**/*.zip
+action_head_runs/**/checkpoints/
+
+# 数据集与生成结果（release 为赛方/本地数据，仅保留 README）
+release/*
+!release/README.md
+
+# 世界模型运行缓存
+world_model_runs/
+tmp_examples*
+new_checkpoint*
+batch_test*
+nohup*
+
+# 大体积媒体与压缩包
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.webm
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# 保留小示例（若存在）
+!examples/**/*.JPG
+!examples/**/*.jpg
+!examples/**/*.png
+!examples/**/*.wav
+
+# 日志与临时
+*.log
+wandb/
+runs/
